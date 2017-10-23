@@ -132,7 +132,7 @@ gulp.task('build', ['default'], function() {
   gulp.src(['vendor/**'])
       .pipe(gulp.dest(RELEASE_DIR + 'vendor'))
 
-  gulp.src(['index.html', 'favicon.ico', 'manifest.json', 'humans.txt', 'robots.txt', 'README.md'])
+  gulp.src(['index.html', 'favicon.ico', 'manifest.json', 'humans.txt', 'robots.txt', 'CNAME', 'README.md'])
       .pipe(gulp.dest(RELEASE_DIR))
 });
 
