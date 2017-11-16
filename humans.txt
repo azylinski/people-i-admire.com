@@ -7,7 +7,4 @@
 
 # TECHNOLOGY COLOPHON
 
-  AWS EC2, Docker
-  Nginx, LetsEncrypt
-  Python (Flask)
-  React
+  Github Pages
