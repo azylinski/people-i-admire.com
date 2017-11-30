@@ -135,10 +135,3 @@ gulp.task('build', ['default'], function() {
   gulp.src(['index.html', 'favicon.ico', 'manifest.json', 'humans.txt', 'robots.txt', 'CNAME', 'README.md'])
       .pipe(gulp.dest(RELEASE_DIR))
 });
-
-// Deploy with github-pages
-// Ref: https://github.com/yeoman/generator-webapp/blob/master/docs/recipes/gh-pages.md
-gulp.task('deploy', ['build'], () => {
-  return gulp.src('dist/**/*')
-    .pipe(ghPages());
-});
