@@ -1,31 +1,56 @@
 {
-  "title": "PEOPLE. I. admire.",
-  "name": "people-i-admire",
-  "version": "0.1.0",
-  "homepage": "https://people-i-admire.com",
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "Landing page for PEOPLE. I.admire. app.",
   "author": "@ArturZylinski",
   "repository": {
     "type": "git",
     "url": "https://github.com/azylinski/people-i-admire.com.git"
   },
+  "private": false,
   "scripts": {
-    "start": "./node_modules/.bin/gulp dev",
-    "build": "./node_modules/.bin/gulp build"
+    "start": "gulp dev",
+    "build": "gulp build",
+    "qa": "gulp amp"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
-    "font-awesome": "4.7.0",
-    "jquery": "^3.2.1",
-    "jquery.easing": "^1.4.1",
-    "simple-line-icons": "2.4.1"
+    "bootstrap": "v4.0.0-beta.2",
+    "froala-design-blocks": "^1.0.1"
   },
   "devDependencies": {
-    "browser-sync": "2.18.13",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.18.13",
+    "critical": "^1.0.0",
+    "del": "^3.0.0",
+    "eslint-config-google": "^0.9.1",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "3.9.0",
-    "gulp-header": "1.8.9",
-    "gulp-rename": "^1.2.2",
+    "gulp-amphtml-validator": "^1.0.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-bro": "^1.0.2",
+    "gulp-cache": "^1.0.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-inject": "^4.3.0",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-newer": "^1.3.0",
+    "gulp-replace": "^0.6.1",
+    "gulp-replace-important": "^1.0.2-alpha",
+    "gulp-rev": "^8.1.0",
+    "gulp-rev-replace": "^0.4.3",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "3.0.0"
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-useref": "^3.1.3",
+    "run-sequence": "^2.2.0"
   }
 }

@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Artur Zylinski -- One Man Band -- https://twitter.com/ArturZylinski
+
+# TECHNOLOGY COLOPHON
+
+  Github Pages
+  Travis CI
+  Froala Design Blocks, Bootstrap based
+  AMP Project
