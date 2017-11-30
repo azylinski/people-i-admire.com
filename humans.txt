@@ -7,4 +7,6 @@
 
 # TECHNOLOGY COLOPHON
 
+  New Age, Bootstrap theme
   Github Pages
+  Travis CI
