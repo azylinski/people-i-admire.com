@@ -5,7 +5,6 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
-var ghPages = require('gulp-gh-pages');
 var pkg = require('./package.json');
 
 // Set the banner content
