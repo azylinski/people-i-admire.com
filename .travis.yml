@@ -2,8 +2,12 @@ language: node_js
 node_js:
   - "lts/*"
 
+cache:
+  directories:
+    - "node_modules"
+
 before_deploy:
-  - npm run build
+  - yarn run build
 
 deploy:
   provider: pages

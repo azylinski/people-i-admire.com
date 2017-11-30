@@ -1,5 +1,7 @@
 # PEOPLE. I. admire. - Landing page
 
+[![Build Status](https://travis-ci.org/azylinski/people-i-admire.com.svg?branch=master)](https://travis-ci.org/azylinski/people-i-admire.com)
+
 This is the source of the https://people-i-admire.com website.
 
 ## Built With
