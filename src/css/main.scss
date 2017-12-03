@@ -1,6 +1,12 @@
 @import 'bootstrap';
 @import 'froala_blocks';
 
+#main-panel {
+  background-image: url(./img/alt_wide_2.svg);
+  background-size: cover;
+  background-position: center;
+}
+
 footer {
   position: fixed;
   bottom: 0;

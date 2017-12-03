@@ -88,17 +88,18 @@ gulp.task('copy:tmp', () =>
 );
 
 // copy static assets for prod
-gulp.task('copy:static', () =>
+gulp.task('copy:static', () => {
   gulp.src(
     ['src/favicon.ico', 'src/manifest.json', 'src/humans.txt', 'src/robots.txt', 'src/CNAME']
   ).pipe(gulp.dest('dist'))
-);
+
+  gulp.src('src/img/*').pipe(gulp.dest('dist/img'))
+});
 
 // Clean output directory
-gulp.task('clean', () => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
+gulp.task('clean', () => del(['.tmp', 'dist/**/*', '!dist/.git'], {dot: true}));
 
-// Watch files for changes & reload
-gulp.task('dev', ['styles', 'html'], () => {
+gulp.task('server', () =>
   browserSync.init({
     // customize the browserSync console logging prefix
     logprefix: 'pia',
@@ -109,8 +110,11 @@ gulp.task('dev', ['styles', 'html'], () => {
     server: ['dist'],
     port: 3000,
     reloaddelay: 1000
-  });
+  })
+);
 
+// Watch files for changes & reload
+gulp.task('dev', ['styles', 'html', 'server'], () => {
   gulp.watch('src/*.html', [browserSync.reload]);
   gulp.watch('src/css/**/*.{scss,css}', ['styles', browserSync.reload]);
 });
