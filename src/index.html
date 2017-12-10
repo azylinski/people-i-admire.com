@@ -104,7 +104,8 @@
               </li>
             </ul>
 
-            <a class="btn btn-empty ml-md-3" href="https://app.people-i-admire.com">Try demo →</a>
+            <a href="https://app.people-i-admire.com" data-vars-outbound-link="https://app.people-i-admire.com"
+               class="btn btn-empty ml-md-3">Try demo →</a>
           </div>
         </nav>
       </div>
@@ -117,8 +118,9 @@
             <h1>Joint fight<br/>For better content</h1>
 
             <p class="mt-4">
-              <a class="btn" href="#">How?</a>
-              <a class="btn btn-empty" href="https://app.people-i-admire.com">Try demo →</a>
+              <a class="btn" href="#how">How?</a>
+              <a href="https://app.people-i-admire.com" data-vars-outbound-link="https://app.people-i-admire.com"
+                 class="btn btn-empty">Try demo →</a>
             </p>
           </div>
 
@@ -130,11 +132,49 @@
       </div>
     </section>
 
+    <section id="how" class="fdb-block">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2>How it works?</h2>
+          </div>
+        </div>
+        <div class="row text-left">
+          <div class="col-12 col-md-8 m-auto col-lg-4">
+            <div class="fdb-box fdb-touch">
+              <h2>We identify true&nbsp;experts within given&nbsp;topic</h2>
+              <p>No favoritism, no subjective opinion.<br/>Pure facts.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 m-auto col-lg-4">
+            <div class="fdb-box fdb-touch">
+              <h2>An app follows them on twitter, All&nbsp;of&nbsp;them</h2>
+              <p>As soon as new tweet appears,<br/>we check if it is relevant</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 m-auto col-lg-4">
+            <div class="fdb-box fdb-touch">
+              <h2>We put it down into your personal feed</h2>
+              <p>Simple article preview for you to read and enjoy. You are welcome :)</p>
+            </div>
+          </div>
+        </div>
+        <div class="row text-right">
+          <div class="col-12">
+            <a href="#more">Learn More ></a>
+          </div>
+        </div>  
+      </div>
+    </section>
+
     <footer class="fdb-block footer-small bg-dark">
       <div class="container">
         <div class="row text-center">
           <div class="col">
-            <p><strong>PEOPLE.</strong> I.admire. by <a href="https://twitter.com/ArturZylinski">@ArturZylinski</a></p>
+            <p>
+              <strong>PEOPLE.</strong> I.admire. by
+              <a href="https://twitter.com/ArturZylinski" data-vars-outbound-link="https://twitter.com/ArturZylinski">@ArturZylinski</a>
+            </p>
           </div>
         </div>
       </div>
@@ -150,6 +190,16 @@
           "trackPageview": {
             "on": "visible",
             "request": "pageview"
+          },
+          "outboundLinks": {
+            "on": "click",
+            "selector": "a",
+            "request": "event",
+            "vars": {
+              "eventCategory": "outbound",
+              "eventAction": "click",
+              "eventLabel": "${outboundLink}"
+            }
           }
         }
       }
